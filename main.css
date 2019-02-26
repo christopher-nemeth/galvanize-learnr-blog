@@ -1,0 +1,250 @@
+body {
+font-size: 2vh;
+font-family: 'Hind Siliguri', sans-serif;
+margin-bottom: 5.4vh;
+}
+
+/*-------------------------------*/
+/*-------Sticky Footer Fix-------*/
+/*-------------------------------*/
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.site-content {
+    flex: 1;
+}
+
+/*-------------------------------*/
+/*----------Main Styles----------*/
+/*-------------------------------*/
+header {
+    display: none;
+}
+
+main {
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    background: inherit;
+    width: auto;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+ 
+section h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 3vh; 
+    align-self: center;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.7em;
+    margin-bottom: 2vh;
+    color: rgb(125, 213, 91);
+}
+
+section p {
+    font-size: 1.3em;
+    margin-bottom: 2vh;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+section p:last-child {
+    font-size: 1.3em;
+    margin-bottom: 4vh;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+section ol {
+    font-size: 1.3em;
+}
+
+section ol li {
+margin-bottom: 2vh;
+}
+
+section ol li::first-letter {
+   color: rgb(125, 213, 91);
+   font-size: 1.2em;
+   padding-right: 1%;
+}
+
+section ul {
+    display: block;
+    font-size: 1.3em;
+}
+
+section ul li{
+    display: block;
+    margin-bottom: 2vh;
+}
+
+.small-border {
+    margin-top: 2%;
+    margin-bottom: 6vh;
+    border-bottom: solid lightgrey 1px; 
+}
+    
+.index-bg {
+    display: flex;
+    background: url(images/learn-setting.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.header-container{
+    padding-top: 25vh;
+    text-shadow: 3px 3px 4px black;
+    
+}
+
+.h1-index {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    margin-bottom: 4vh;
+}
+
+.h2-index{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+}
+
+.fa-angle-right{
+  color: white; 
+  font-size: 10vh;
+  margin-top: 7vh;
+}
+
+.fa-angle-right:hover{
+    color: rgb(125, 213, 91);
+}
+
+.about-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-pic {
+    width: 75%;
+    height: 75%;
+    margin-bottom: 2.5vh;
+}
+
+/*-------------------------------*/
+/*---------Footer Styles---------*/
+/*-------------------------------*/
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+    border-top: solid #7dd55b 1.5px;
+}
+
+footer a {
+    color: white;
+    padding: 5.1% 4.7%;
+    font-size: 3.6vh;
+    font-family: 'Londrina Outline', cursive;
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(125, 213, 91);
+}
+
+/*-------------------------------*/
+/*------------Desktop------------*/
+/*-------------------------------*/
+@media only screen and (min-width: 768px) {
+   body {
+        margin-bottom: 0;
+   }
+
+    header {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%; 
+        background-color: rgb(55, 55, 55);
+        padding: 2% 0;
+        border-bottom: solid #7dd55b 1.5px;
+    }
+
+    header h1 {
+        font-family: 'Rubik', sans-serif;
+        color: white;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+    }
+  
+    nav ul li a {
+        color: white;
+        font-size: 1.3em;
+        text-decoration: none;
+        
+    }
+
+    nav ul li a:hover{
+        color: rgb(125, 213, 91);
+
+    }
+
+    .active {
+        border-bottom: solid 2px #7dd55b;
+    }
+
+    main {
+        margin-top: 5vh;
+    }
+
+    section h1 {
+        font-size: 3.2em;
+        margin-top: 1vh;
+        margin-bottom: 3vh; 
+        align-self: center;
+    }
+
+    .about-flex{
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+
+    .about-pic {
+        width: 35%;
+        height: 35%;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    footer{
+        display: none;
+    }
+}
